@@ -1,0 +1,384 @@
+{
+	"manufacturer": "AdTrustMedia LLC dba: eZLO",
+	"manufacturerId": "0x025b",
+	"label": "EZL-TSTAT-US",
+	"description": "Thermostat",
+	"devices": [
+		{
+			"productType": "0x8102",
+			"productId": "0x5900"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Lifeline",
+			"maxNodes": 5,
+			"isLifeline": true
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Temperature Unit",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Celsius",
+					"value": 0
+				},
+				{
+					"label": "Farenheit",
+					"value": "1"
+				}
+			]
+		},
+		{
+			"#": "2",
+			"label": "Temperature Change Report Threshold",
+			"description": "0: Disabled, 3-255: n*0.1 °(C/F), depending on parameter 1",
+			"valueSize": 2,
+			"unit": "0.1 °(C/F)",
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 5,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "3",
+			"label": "Humidity Change Report Threshold",
+			"valueSize": 2,
+			"unit": "%",
+			"minValue": 0,
+			"maxValue": 99,
+			"defaultValue": 4,
+			"options": [
+				{
+					"label": "Disable",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "12",
+			"label": "State After Power Failure",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 1,
+			"options": [
+				{
+					"label": "Shutdown",
+					"value": 0
+				},
+				{
+					"label": "Previous mode",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "13",
+			"label": "Screen Off Timeout",
+			"description": "On battery power: 0-2: screen off after 8 seconds, 3-90: screen off after n seconds. With common wire: 0: disable screen off, 1-90: screen off after n minutes.",
+			"valueSize": 1,
+			"unit": "Seconds (on battery) / Minutes (with common wire)",
+			"minValue": 0,
+			"maxValue": 90,
+			"defaultValue": 1,
+			"options": [
+				{
+					"label": "Always on",
+					"value": 0
+				}
+			]
+		},
+		{
+			"#": "14",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Beep"
+		},
+		{
+			"#": "15",
+			"label": "Backlight Brightness",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 8,
+			"defaultValue": 8
+		},
+		{
+			"#": "16",
+			"label": "Maximum Temperature",
+			"description": "Unit depends on parameter #1.  Default value 37 °C / 98 °F",
+			"valueSize": 1,
+			"unit": "°(C/F)",
+			"minValue": 1,
+			"maxValue": 99,
+			"defaultValue": 37
+		},
+		{
+			"#": "17",
+			"label": "Minimum Temperature",
+			"description": "Unit depends on parameter #1.  Default value 5 °C / 41 °F",
+			"valueSize": 1,
+			"unit": "°(C/F)",
+			"minValue": 1,
+			"maxValue": 99,
+			"defaultValue": 5
+		},
+		{
+			"#": "18",
+			"label": "Temperature Offset",
+			"valueSize": 1,
+			"unit": "0.1 °(C/F)",
+			"minValue": -99,
+			"maxValue": 99,
+			"defaultValue": 0,
+			"unsigned": false
+		},
+		{
+			"#": "19",
+			"label": "Humidity Offset",
+			"valueSize": 1,
+			"unit": "%",
+			"minValue": -20,
+			"maxValue": 20,
+			"defaultValue": 0,
+			"unsigned": false
+		},
+		{
+			"#": "20",
+			"label": "Display Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Temperature only",
+					"value": 0
+				},
+				{
+					"label": "Temperature + fan mode",
+					"value": 1
+				},
+				{
+					"label": "Temperature + humidity",
+					"value": 2
+				},
+				{
+					"label": "Temperature + fan mode + humidity",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "21",
+			"label": "Panel Lock",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Normal operation",
+					"value": 0
+				},
+				{
+					"label": "Secret menu disabled except for panel lock mode",
+					"value": 1
+				},
+				{
+					"label": "Changing setpoint and mode disabled, secret menu disabled except for panel lock mode",
+					"value": 2
+				},
+				{
+					"label": "Changing setpoint and mode disabled, secret menu disabled",
+					"value": 3
+				}
+			]
+		},
+		{
+			"#": "22",
+			"label": "Stage 1 Hysteresis",
+			"description": "Distance between target and room temperature before heating or cooling begins. Default: 1.0 °C / 2.0 °F",
+			"valueSize": 1,
+			"unit": "0.1 °(C/F)",
+			"minValue": 3,
+			"maxValue": 90,
+			"defaultValue": 10
+		},
+		{
+			"#": "23",
+			"label": "Stage 2 Hysteresis",
+			"description": "Additional distance between target and room temperature before second stage heating or cooling begins. Default: 1.0 °C / 2.0 °F",
+			"valueSize": 1,
+			"unit": "0.1 °(C/F)",
+			"minValue": 3,
+			"maxValue": 90,
+			"defaultValue": 10
+		},
+		{
+			"#": "24",
+			"label": "Stage 3 Hysteresis",
+			"description": "Additional distance between target and room temperature before third stage heating begins. Default: 1.0 °C / 2.0 °F",
+			"valueSize": 1,
+			"unit": "0.1 °(C/F)",
+			"minValue": 3,
+			"maxValue": 90,
+			"defaultValue": 10
+		},
+		{
+			"#": "25",
+			"label": "System Type",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 12,
+			"defaultValue": 12,
+			"options": [
+				{
+					"label": "One-stage conventional cool only",
+					"value": 0
+				},
+				{
+					"label": "Two-stage conventional cool only",
+					"value": 1
+				},
+				{
+					"label": "One-stage conventional heat only",
+					"value": 2
+				},
+				{
+					"label": "One-stage conventional heat only (no fan)",
+					"value": 3
+				},
+				{
+					"label": "Two-stage conventional heat only",
+					"value": 4
+				},
+				{
+					"label": "One-stage conventional heat & cool",
+					"value": 5
+				},
+				{
+					"label": "Two-stage conventional heat & cool",
+					"value": 6
+				},
+				{
+					"label": "One-stage heat pump cool only",
+					"value": 7
+				},
+				{
+					"label": "Two-stage heat pump cool only",
+					"value": 8
+				},
+				{
+					"label": "One-stage heat pump heat only",
+					"value": 9
+				},
+				{
+					"label": "Twp-stage heat pump heat only",
+					"value": 10
+				},
+				{
+					"label": "One-stage heat pump heat & cool",
+					"value": 11
+				},
+				{
+					"label": "Two-stage heat pump heat & cool",
+					"value": 12
+				}
+			]
+		},
+		{
+			"#": "26",
+			"label": "Changeover Valve Behavior",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "O/B on when cooling",
+					"value": 0
+				},
+				{
+					"label": "O/B on when heating",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": 27,
+			"label": "Compressor Protection Time",
+			"valueSize": 1,
+			"unit": "minutes",
+			"minValue": 0,
+			"maxValue": 10,
+			"defaultValue": 1
+		},
+		{
+			"#": "28",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Emergency Heat Installed"
+		},
+		{
+			"#": "29",
+			"label": "Schedule Display Mode",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Time + week + time period",
+					"value": 0
+				},
+				{
+					"label": "Week + time period",
+					"value": 1
+				},
+				{
+					"label": "None",
+					"value": 2
+				}
+			]
+		},
+		{
+			"#": "30",
+			"label": "Fan Shutdown Delay",
+			"valueSize": 1,
+			"unit": "minutes",
+			"minValue": 0,
+			"maxValue": 127,
+			"defaultValue": 0
+		},
+		{
+			"#": "31",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Display Compressor Delay Countdown"
+		},
+		{
+			"#": "32",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Emergency Heat Enabled",
+			"defaultValue": 1
+		},
+		{
+			"#": "45",
+			"$import": "~/templates/master_template.json#base_enable_disable",
+			"label": "Schedule Function Enabled"
+		}
+		// Need to understand schedule logic to add it
+	],
+	"metadata": {
+		"reset": "Find the \"Reset\" button on the controller near the Ethernet cable connector.\nPush and hold the RESET button for at least 5 sec (on Ezlo Secure LED starts blinking RED), After that your Ezlo controller will be reset to factory defaults.\nReset to Factory Settings remove all the information about added devices\nand reset Z-Wave chip (new Home ID, new S0/S2 keys, remove all Z-Wave\nnodes), scenes created, House modes settings, etc. The process is\nirreversible.",
+		"manual": "https://shop.ezlo.com/wp-content/uploads/Ezlo_Thermostat_Full_Manual_11052024.pdf"
+	}
+}
