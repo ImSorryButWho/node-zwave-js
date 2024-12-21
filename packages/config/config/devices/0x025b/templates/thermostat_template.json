@@ -1,0 +1,60 @@
+{
+	"schedule_hour": {
+		"valueSize": 2,
+		"minValue": 0,
+		"maxValue": 23,
+		"unit": "hour"
+	},
+	"schedule_minute": {
+		"valueSize": 2,
+		"minValue": 0,
+		"maxValue": 60,
+		"unit": "minute",
+		"defaultValue": 0
+	},
+	"schedule_hour_1st": {
+		"$import": "#schedule_hour",
+		"defaultValue": 6
+	},
+	"schedule_hour_2nd": {
+		"$import": "#schedule_hour",
+		"defaultValue": 8
+	},
+	"schedule_hour_3rd": {
+		"$import": "#schedule_hour",
+		"defaultValue": 18
+	},
+	"schedule_hour_4th": {
+		"$import": "#schedule_hour",
+		"defaultValue": 22
+	},
+	"setpoint": {
+		"valueSize": 2,
+		"unit": "0.1 °(C/F)",
+		"description": "Unit and default depends on parameter #1."
+	},
+	"schedule_hour_1st_fine": {
+		"$import": "#schedule_hour_1st",
+		"description": "Ignored if not explicitly set to a value."
+	},
+	"schedule_hour_2nd_fine": {
+		"$import": "#schedule_hour_2nd",
+		"description": "Ignored if not explicitly set to a value."
+	},
+	"schedule_hour_3rd_fine": {
+		"$import": "#schedule_hour_3rd",
+		"description": "Ignored if not explicitly set to a value."
+	},
+	"schedule_hour_4th_fine": {
+		"$import": "#schedule_hour_4th",
+		"description": "Ignored if not explicitly set to a value."
+	},
+	"schedule_minute_fine": {
+		"$import": "#schedule_minute",
+		"description": "Ignored if not explicitly set to a value."
+	},
+	"setpoint_fine": {
+		"$import": "#setpoint",
+		"description": "Unit and default depends on parameter #1. Ignored if not explicitly set to a value."
+	}
+}

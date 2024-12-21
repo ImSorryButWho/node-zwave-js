@@ -374,11 +374,664 @@
 			"#": "45",
 			"$import": "~/templates/master_template.json#base_enable_disable",
 			"label": "Schedule Function Enabled"
+		},
+		{
+			"#": "46[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st",
+			"label": "Monday-Sunday 1st Period Hour"
+		},
+		{
+			"#": "46[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute",
+			"label": "Monday-Sunday 1st Period Minute"
+		},
+		{
+			"#": "47[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd",
+			"label": "Monday-Sunday 2nd Period Hour"
+		},
+		{
+			"#": "47[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute",
+			"label": "Monday-Sunday 2nd Period Minute"
+		},
+		{
+			"#": "48[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd",
+			"label": "Monday-Sunday 3rd Period Hour"
+		},
+		{
+			"#": "48[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute",
+			"label": "Monday-Sunday 3rd Period Minute"
+		},
+		{
+			"#": "49[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th",
+			"label": "Monday-Sunday 4th Period Hour"
+		},
+		{
+			"#": "49[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute",
+			"label": "Monday-Sunday 4th Period Minute"
+		},
+		{
+			"#": "50",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "51",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "52",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "53",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "54",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "55",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "56",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "57",
+			"$import": "templates/thermostat_template.json#setpoint",
+			"label": "Monday-Sunday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "58[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Monday 1st Period Hour"
+		},
+		{
+			"#": "58[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Monday 1st Period Minute"
+		},
+		{
+			"#": "59[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Tuesday 1st Period Hour"
+		},
+		{
+			"#": "59[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Tuesday 1st Period Minute"
+		},
+		{
+			"#": "60[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Wednesday 1st Period Hour"
+		},
+		{
+			"#": "60[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Wednesday 1st Period Minute"
+		},
+		{
+			"#": "61[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Thursday 1st Period Hour"
+		},
+		{
+			"#": "61[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Thursday 1st Period Minute"
+		},
+		{
+			"#": "62[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Friday 1st Period Hour"
+		},
+		{
+			"#": "62[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Friday 1st Period Minute"
+		},
+		{
+			"#": "63[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Saturday 1st Period Hour"
+		},
+		{
+			"#": "63[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Saturday 1st Period Minute"
+		},
+		{
+			"#": "64[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_1st_fine",
+			"label": "Sunday 1st Period Hour"
+		},
+		{
+			"#": "64[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Sunday 1st Period Minute"
+		},
+		{
+			"#": "65[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Monday 2nd Period Hour"
+		},
+		{
+			"#": "65[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Monday 2nd Period Minute"
+		},
+		{
+			"#": "66[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Tuesday 2nd Period Hour"
+		},
+		{
+			"#": "66[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Tuesday 2nd Period Minute"
+		},
+		{
+			"#": "67[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Wednesday 2nd Period Hour"
+		},
+		{
+			"#": "67[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Wednesday 2nd Period Minute"
+		},
+		{
+			"#": "68[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Thursday 2nd Period Hour"
+		},
+		{
+			"#": "68[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Thursday 2nd Period Minute"
+		},
+		{
+			"#": "69[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Friday 2nd Period Hour"
+		},
+		{
+			"#": "69[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Friday 2nd Period Minute"
+		},
+		{
+			"#": "70[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Saturday 2nd Period Hour"
+		},
+		{
+			"#": "70[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Saturday 2nd Period Minute"
+		},
+		{
+			"#": "71[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_2nd_fine",
+			"label": "Sunday 2nd Period Hour"
+		},
+		{
+			"#": "71[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Sunday 2nd Period Minute"
+		},
+		{
+			"#": "72[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Monday 3rd Period Hour"
+		},
+		{
+			"#": "72[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Monday 3rd Period Minute"
+		},
+		{
+			"#": "73[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Tuesday 3rd Period Hour"
+		},
+		{
+			"#": "73[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Tuesday 3rd Period Minute"
+		},
+		{
+			"#": "74[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Wednesday 3rd Period Hour"
+		},
+		{
+			"#": "74[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Wednesday 3rd Period Minute"
+		},
+		{
+			"#": "75[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Thursday 3rd Period Hour"
+		},
+		{
+			"#": "75[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Thursday 3rd Period Minute"
+		},
+		{
+			"#": "76[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Friday 3rd Period Hour"
+		},
+		{
+			"#": "76[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Friday 3rd Period Minute"
+		},
+		{
+			"#": "77[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Saturday 3rd Period Hour"
+		},
+		{
+			"#": "77[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Saturday 3rd Period Minute"
+		},
+		{
+			"#": "78[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_3rd_fine",
+			"label": "Sunday 3rd Period Hour"
+		},
+		{
+			"#": "78[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Sunday 3rd Period Minute"
+		},
+		{
+			"#": "79[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Monday 4th Period Hour"
+		},
+		{
+			"#": "79[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Monday 4th Period Minute"
+		},
+		{
+			"#": "80[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Tuesday 4th Period Hour"
+		},
+		{
+			"#": "80[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Tuesday 4th Period Minute"
+		},
+		{
+			"#": "81[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Wednesday 4th Period Hour"
+		},
+		{
+			"#": "81[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Wednesday 4th Period Minute"
+		},
+		{
+			"#": "82[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Thursday 4th Period Hour"
+		},
+		{
+			"#": "82[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Thursday 4th Period Minute"
+		},
+		{
+			"#": "83[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Friday 4th Period Hour"
+		},
+		{
+			"#": "83[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Friday 4th Period Minute"
+		},
+		{
+			"#": "84[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Saturday 4th Period Hour"
+		},
+		{
+			"#": "84[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Saturday 4th Period Minute"
+		},
+		{
+			"#": "85[0x0f]",
+			"$import": "templates/thermostat_template.json#schedule_hour_4th_fine",
+			"label": "Sunday 4th Period Hour"
+		},
+		{
+			"#": "85[0xf0]",
+			"$import": "templates/thermostat_template.json#schedule_minute_fine",
+			"label": "Sunday 4th Period Minute"
+		},
+		{
+			"#": "86",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "87",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "88",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "89",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "90",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "91",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "92",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 1st Period Heat Setpoint"
+		},
+		{
+			"#": "93",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "94",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "95",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "96",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "97",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "98",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "99",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 2nd Period Heat Setpoint"
+		},
+		{
+			"#": "100",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "101",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "102",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "103",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "104",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "105",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "106",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 3rd Period Heat Setpoint"
+		},
+		{
+			"#": "107",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "108",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "109",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "110",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "111",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "112",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "113",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 4th Period Heat Setpoint"
+		},
+		{
+			"#": "114",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "115",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "116",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "117",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "118",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "119",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "120",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 1st Period Cool Setpoint"
+		},
+		{
+			"#": "121",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "122",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "123",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "124",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "125",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "126",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "127",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 2nd Period Cool Setpoint"
+		},
+		{
+			"#": "128",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "129",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "130",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "131",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "132",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "133",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "134",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 3rd Period Cool Setpoint"
+		},
+		{
+			"#": "135",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Monday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "136",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Tuesday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "137",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Wednesday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "138",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Thursday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "139",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Friday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "140",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Saturday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "141",
+			"$import": "templates/thermostat_template.json#setpoint_fine",
+			"label": "Sunday 4th Period Cool Setpoint"
+		},
+		{
+			"#": "255",
+			"label": "Factory Reset",
+			"valueSize": 1,
+			"defaultValue": 0,
+			"options": [
+				{
+					"value": 1,
+					"label": "Restore factory settings"
+				}
+			]
 		}
-		// Need to understand schedule logic to add it
 	],
 	"metadata": {
-		"reset": "Find the \"Reset\" button on the controller near the Ethernet cable connector.\nPush and hold the RESET button for at least 5 sec (on Ezlo Secure LED starts blinking RED), After that your Ezlo controller will be reset to factory defaults.\nReset to Factory Settings remove all the information about added devices\nand reset Z-Wave chip (new Home ID, new S0/S2 keys, remove all Z-Wave\nnodes), scenes created, House modes settings, etc. The process is\nirreversible.",
+		"inclusion": "Hold up and down for 3 seconds, until \"---\" is displayed.  Short press circle to enter inclusion mode.",
+		"exclusion": "Hold up and down for 3 second, until node number is displayed.  Short press circle to enter exclusion mode.",
+		"reset": "In the menu, set item 98 (Factory Reset) to 1.",
 		"manual": "https://shop.ezlo.com/wp-content/uploads/Ezlo_Thermostat_Full_Manual_11052024.pdf"
 	}
 }
